@@ -11,6 +11,9 @@ jobs:
 
   pytest:
     runs-on: ubuntu-latest
+    env:
+      URL: "www.google.com"
+      METHOD: GET
     steps:
       - name: print github action context
         run: |
@@ -27,5 +30,5 @@ jobs:
           pytest
           pwd
       - name: ping Google
-        run: ping -c 5 www.google.com
+        uses: sisodiya2421/pinger@master
         
