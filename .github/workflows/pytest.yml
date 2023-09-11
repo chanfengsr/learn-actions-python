@@ -26,3 +26,6 @@ jobs:
         run: |
           pytest
           pwd
+      - name: ping Google
+        run: ping -c 5 www.google.com
+        
