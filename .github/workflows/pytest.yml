@@ -12,7 +12,7 @@ jobs:
   pytest:
     runs-on: ubuntu-latest
     env:
-      URL: "www.chanfengsanren.com"
+      URL: "www.youtube.com"
       METHOD: GET
     steps:
       - name: print github action context
